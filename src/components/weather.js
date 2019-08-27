@@ -1,9 +1,10 @@
 import React from "react";
+import "./weather.css";
 
 class Weather extends React.Component {
   render() {
     return (
-      <div>
+      <div className="weatherDiv">
         <h6>Weather Component</h6>
         {this.props.city && this.props.country && (
           <p>
