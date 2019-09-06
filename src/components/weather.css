@@ -1,37 +1,151 @@
 body {
-  background-color: white;
+  background-color: #fbf6f3;
 }
-.titleDiv {
-  margin-top: 150px;
+input {
+  margin-right: 3px;
+  border-style: none;
+  background: none;
+  outline: none;
+  border-radius: 30px;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+h1 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+  font-family: "Baloo", cursive;
+}
+img {
+  width: 100px;
+  height: 100px;
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+span {
+  margin-left: 90px;
+  margin-bottom: 30px;
+}
+h3 {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin: 0px;
+}
+.divContent {
+  margin-top: 140px;
 }
 .mainDiv {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 180px;
-  text-align: center;
-  border-radius: 20px 20px 20px 20px;
-  margin-right: 80px;
-}
-.formDiv {
-  background-image: linear-gradient(
-    45deg,
-    #ff9a9e 0%,
-    #fad0c4 99%,
-    #fad0c4 100%
-  );
-  margin-right: 80px;
-  height: 400px;
+  grid-template-columns: 55% 45%;
+  margin-top: 70px;
 }
 
-.titleDiv {
+.divLeft {
+  background-color: #a5d4cf;
+  margin-left: 300px;
+  border-radius: 20px 0px 0px 20px;
+  height: 450px;
+}
+.divRight {
   background-color: white;
-  margin-left: 80px;
-  justify-content: center;
+  margin-right: 300px;
+  border-radius: 0px 20px 20px 0px;
+  height: 450px;
+  box-shadow: 16px 20px 47px -22px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 16px 20px 47px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 16px 20px 47px -22px rgba(0, 0, 0, 0.75);
+}
+p {
   text-align: center;
+  margin-top: 80px;
+  font-family: sans-serif;
+}
+h5 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+h6 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0px;
+}
+button {
+  margin-left: 130px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+form {
+  margin-top: 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 90px;
+  font-family: sans-serif;
+  margin-top: 0;
+  color: #a5d4cf;
+  margin-left: 20px;
+}
+i {
+  margin-top: 30px;
+  margin-left: 120px;
+}
+.iconPM {
+  background-size: 140px 140px;
+  width: 140px;
+  height: 140px;
+  border: none;
+  margin-left: 180px;
+  display: inline-block;
+  padding-top: 60px;
+  animation: blink 10s ease-in infinite;
 }
 
-.weatherDiv {
-  justify-content: center;
-  text-align: left;
-  background-color: white;
+@keyframes blink {
+  from,
+  0%,
+  100% {
+    background-image: url(raining.png);
+  }
+  25% {
+    background-image: url(snow.png);
+  }
+  50% {
+    background-image: url(cloudy.png);
+  }
+  70% {
+    background-image: url(weatherIcon.png);
+  }
+}
+.myButton {
+  background-color: #a5d4cf;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border: 1px solid #a5d4cf;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 13px;
+
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #a5d4cf;
+}
+.myButton:hover {
+  background-color: lightblue;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
 }

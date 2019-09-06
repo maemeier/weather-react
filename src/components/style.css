@@ -1,0 +1,92 @@
+body {
+  background-color: #fbf6f3;
+}
+
+h1 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Baloo", cursive;
+}
+img {
+  width: 150px;
+  height: 150px;
+  margin-left: 170px;
+  margin-bottom: 30px;
+}
+h3 {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin: 0px;
+}
+.divContent {
+  margin-top: 140px;
+}
+.mainDiv {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  margin-top: 30px;
+  height: 400px;
+}
+
+.divLeft {
+  background-color: #a5d4cf;
+  margin-left: 300px;
+  border-radius: 20px 0px 0px 20px;
+  height: 530px;
+}
+.divRight {
+  background-color: white;
+  margin-right: 300px;
+  border-radius: 0px 20px 20px 0px;
+  height: 530px;
+}
+p {
+  text-align: center;
+  margin-top: 80px;
+  font-family: sans-serif;
+}
+h6 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0px;
+}
+h2 {
+  text-align: center;
+  font-size: 90px;
+  font-family: sans-serif;
+  margin-top: 0;
+  color: #a5d4cf;
+}
+i {
+  margin-top: 30px;
+  margin-left: 120px;
+}
+.iconPM {
+  background: url(https://res.cloudinary.com/fyni/image/upload/v1566997576/rain_rhssex.png)
+    center no-repeat;
+  background-size: 140px 140px;
+  width: 140px;
+  height: 140px;
+  border: none;
+  margin-left: 110px;
+  display: inline-block;
+  padding-top: 60px;
+
+  animation: blink 6s ease-in infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}

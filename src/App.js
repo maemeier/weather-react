@@ -7,11 +7,11 @@ const API_KEY = "d554b19eb3803ac4c50344d267a27ad5";
 
 class App extends React.Component {
   state = {
-    temperature: undefined,
-    city: undefined,
-    country: undefined,
-    humidity: undefined,
-    description: undefined,
+    temperature: 29,
+    city: "Bangkok",
+    country: "TH	",
+    humidity: 40,
+    description: "damm Hot",
     error: undefined
   };
 
@@ -42,7 +42,7 @@ class App extends React.Component {
         country: undefined,
         humidity: undefined,
         description: undefined,
-        error: "Don't be lazy! Enter the city and county plzzzz"
+        error: "Enter the city and county plzzzz"
       });
     }
   };
